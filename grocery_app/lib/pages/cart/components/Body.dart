@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 class Body extends StatelessWidget {
   const Body({super.key});
 
+  // Delete function
   void delteItem(context, index) async {
     bool deleteConfirmed = await showDialog(
       context: context,
@@ -94,7 +95,20 @@ class Body extends StatelessWidget {
     return Consumer<CartModel>(
       builder: (context, value, child) {
         return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const SizedBox(height: 20),
+            const Padding(
+              padding: EdgeInsets.only(left: 20.0),
+              child: Text(
+                "My Cart",
+                style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w500,
+                    color: Color.fromARGB(255, 110, 110, 110)),
+              ),
+            ),
+            const SizedBox(height: 20),
             // list item to cart
             Expanded(
               child: ListView.builder(

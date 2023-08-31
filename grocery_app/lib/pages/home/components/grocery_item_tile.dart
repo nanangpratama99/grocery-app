@@ -22,7 +22,7 @@ class BuildGroceryItemTile extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.grey.shade300,
+        color: Colors.grey.shade200,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(

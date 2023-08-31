@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/pages/cart/components/body.dart';
 
+import '../../widgets/back_button.dart';
+
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
 
@@ -8,9 +10,10 @@ class CartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green.shade600,
+        automaticallyImplyLeading: false,
+        backgroundColor: Colors.white,
         elevation: 0,
-        title: const Text("Cart Page"),
+        title: const Back(),
       ),
       body: const Body(),
     );
